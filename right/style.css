@@ -1,0 +1,33 @@
+body  {
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+}
+.links  {
+    margin: auto;
+    width: 80%;
+}
+a {
+    text-decoration: none;
+    position: relative;
+}
+
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 72px;
+}
+.right a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #000;
+    transition: 0.2s;
+}
+.right a:hover:before {
+    width: 100%;
+}
